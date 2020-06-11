@@ -1,0 +1,34 @@
+CODE BOOK
+1.R script called run_analysis.R is created .
+2.Datset is donloaded from link provided.
+3.Data from respective files in the folder is assigned to variables , 
+1)features –features.txt
+2)activities-acitivity_labels.txt
+3)subject-test-subject_test.txt
+4)x-test-x_test.txt
+5)y-test-y_test.txt
+6)subject_train-subject-train.txt
+7)x_train-x_train.txt
+8)y_train-y_train.txt
+
+4.Merges the training and the test sets to create one data set.
+        1.x-rbind of x_train and x_test
+       2.y-rbind of y_train and y_test
+       3.subject-rbind of subject_train and subject_test
+       4.merge-cbind of subject ,x,y
+       
+
+5.Extracts only the measurements on the mean and standard deviation for each measurement.
+  Only those columns are selected from merge where standdard deviation and mean are present     using select
+1. Uses descriptive activity names to name the activities in the data set
+2. Acc in column’s name replaced by Accelerometer
+3.  Gyro in column’s name replaced by Gyroscope
+4.  BodyBody in column’s name replaced by Body
+5.  Mag in column’s name replaced by Magnitude
+6. words starting with character f in column’s name replaced by Frequency
+7. words starting with character t in column’s name replaced by Time
+8. lines with mean is replaced by word mean
+9. lines with std is replaced by word standard_deviation
+ 6.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+New data set  with average of each variable and activity is created-summarisedata, and written in a new file "Avg_var_by_activity.txt"
+
