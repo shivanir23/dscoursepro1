@@ -9,4 +9,4 @@
    Uses descriptive activity names to name the activities in the data set
    Appropriately labels the data set with descriptive variable names.
    From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each      subject.
-3.Avg_var_by_activity.txt file which contains final tify data fter all the required operations are performed.
+3.Avg_var_by_activity.txt file which contains final tidy data after all the required operations are performed.
